@@ -190,7 +190,7 @@ class ModelLightningModule(MatglLightningModuleMixin, pl.LightningModule):
         self.optimizer = optimizer
         self.scheduler = scheduler
         self.sync_dist = sync_dist
-        self.save_hyperparameters(ignore=["model"])
+        self.save_hyperparameters()
 
     def forward(
         self,
@@ -335,7 +335,7 @@ class PotentialLightningModule(MatglLightningModuleMixin, pl.LightningModule):
         self.optimizer = optimizer
         self.scheduler = scheduler
         self.sync_dist = sync_dist
-        self.save_hyperparameters(ignore=["model"])
+        self.save_hyperparameters()
 
     def forward(
         self,
