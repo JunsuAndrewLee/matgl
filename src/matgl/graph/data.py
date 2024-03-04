@@ -54,7 +54,8 @@ def collate_fn_efs(batch, include_stress: bool = True, include_line_graph: bool 
     e = torch.tensor([d["energies"] for d in labels])  # type: ignore
     f = torch.vstack([d["forces"] for d in labels])  # type: ignore
     s = (
-        torch.vstack([d["stresses"] for d in labels])  # type: ignore
+        torch.tensor(np.zeros(e.size(dim=0)), dtype=matgl.float_th)
+        #torch.vstack([d["stresses"] for d in labels])  # type: ignore
         if include_stress is True
         else torch.tensor(np.zeros(e.size(dim=0)), dtype=matgl.float_th)
     )
