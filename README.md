@@ -28,6 +28,7 @@ Nassar, Carmelo Gonzales).
 
 Major milestones are summarized below. Please refer to the [changelog] for details.
 
+- (not recorded) (Mar 4 2024): Corrections for the issue regarding stress.
 - v1.0.0 (Feb 14 2024): Implementation of [TensorNet] and [SO3Net].
 - v0.5.1 (Jun 9 2023): Model versioning implemented.
 - v0.5.0 (Jun 8 2023): Simplified saving and loading of models. Now models can be loaded with one line of code!
